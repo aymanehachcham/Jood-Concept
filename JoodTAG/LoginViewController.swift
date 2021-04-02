@@ -70,6 +70,9 @@ class LoginViewController: UIViewController {
         return stack
     }()
 
+    deinit {
+        print("Login Screen no longer exists")
+    }
     
     override func viewDidLoad() {
         
@@ -82,6 +85,12 @@ class LoginViewController: UIViewController {
         initConstraints()
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
+        authController = AuthViewController()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        dismiss(animated: true, completion: nil)
     }
     
     func initConstraints(){

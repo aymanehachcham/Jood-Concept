@@ -18,6 +18,7 @@ class AuthViewController: UINavigationController {
     
     func loginTwitter(twitterProvider: OAuthProvider){
         
+        print("TWITTER")
         twitterProvider.getCredentialWith(nil, completion: { (credential, error) in
             if error != nil {
                 self.stopLoadingIndicator()

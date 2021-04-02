@@ -19,6 +19,15 @@ class AppTabBarController: UITabBarController {
         self.tabBar.isTranslucent = true
     }
     
+    deinit {
+        print("Deallocating NAVIGATION TAB BAR")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        dismiss(animated: true, completion: nil)
+    }
+    
     func initTabBar() {
         
         self.view.backgroundColor = .white

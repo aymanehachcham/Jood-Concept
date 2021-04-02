@@ -14,9 +14,6 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
-    var loginController: LoginViewController?
-    var homeController: HomeViewController?
-    var authController: AuthViewController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -31,10 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     
         if let signInError = error {
-            homeController?.stopLoadingIndicator()
-     
+                    
+            LoginViewController().stopLoadingIndicator()
+            
             switch (signInError as NSError).code {
-                
+            
             case GIDSignInErrorCode.canceled.rawValue:
                 print("Canceled")
             case GIDSignInErrorCode.hasNoAuthInKeychain.rawValue:
