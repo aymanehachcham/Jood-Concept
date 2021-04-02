@@ -10,7 +10,7 @@ import Firebase
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UINavigationController {
     
     var authController: AuthViewController?
     
@@ -22,6 +22,10 @@ class HomeViewController: UIViewController {
         
         return button
     }()
+    
+    override func viewDidLayoutSubviews() {
+        googleSignInButton.center = view.center
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

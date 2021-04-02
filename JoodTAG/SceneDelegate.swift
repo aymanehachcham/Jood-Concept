@@ -12,7 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -20,29 +19,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScence = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScence)
         
-        let homeController = HomeViewController()
         let loginController = LoginViewController()
+        let appTabBarController = AppTabBarController()
         
         Auth.auth().addStateDidChangeListener({ (auth, user) in
             if user != nil {
-                
-                let transitionOptions = UIView.AnimationOptions.curveEaseIn
-                
-                UIView.transition(with: self.window!, duration: 0.3, options: transitionOptions, animations: nil, completion: nil)
-                self.window?.rootViewController = homeController
+                self.window?.rootViewController = appTabBarController
                 self.window?.makeKeyAndVisible()
             }
             else{
+                loginController.stopLoadingIndicator()
                 self.window?.rootViewController = loginController
                 self.window?.makeKeyAndVisible()
             }
         })
-        
-//        let mainViewController = LoginViewController()
-//        window?.rootViewController = mainViewController
-//        window?.makeKeyAndVisible()
+    
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
