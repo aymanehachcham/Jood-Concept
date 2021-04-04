@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance()?.delegate = self
+        GIDSignIn.sharedInstance()?.delegate = self 
         
         return true
     }
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     
         if let signInError = error {
-                    
+                     
             LoginViewController().stopLoadingIndicator()
             
             switch (signInError as NSError).code {

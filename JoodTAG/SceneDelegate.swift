@@ -24,17 +24,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         loginController = LoginViewController()
         appTabBarController = AppTabBarController()
         
-        Auth.auth().addStateDidChangeListener({ (auth, user) in
-            if user != nil {
-                self.window?.rootViewController = self.appTabBarController!
-                self.window?.makeKeyAndVisible()
-            }
-            else{
-                self.loginController!.stopLoadingIndicator()
-                self.window?.rootViewController = self.loginController!
-                self.window?.makeKeyAndVisible()
-            }
-        })
+        let onboardingController = OnboardingViewController()
+        
+        self.window?.rootViewController = onboardingController
+        self.window?.makeKeyAndVisible()
+        
+//        Auth.auth().addStateDidChangeListener({ (auth, user) in
+//            if user != nil {
+//                self.window?.rootViewController = self.appTabBarController!
+//                self.window?.makeKeyAndVisible()
+//            }
+//            else{
+//                self.loginController!.stopLoadingIndicator()
+//                self.window?.rootViewController = self.loginController!
+//                self.window?.makeKeyAndVisible()
+//            }
+//        })
     
     }
     

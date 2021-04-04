@@ -15,12 +15,13 @@
 		5B6EE3D6260F5B0100582493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6EE3D4260F5B0100582493 /* LaunchScreen.storyboard */; };
 		5B6EE3E2260F5FA500582493 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EE3E1260F5FA500582493 /* LoginButton.swift */; };
 		5B6EE3E6260F65D200582493 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EE3E5260F65D200582493 /* HomeViewController.swift */; };
-		5B6EE3EE260F679F00582493 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6EE3ED260F679F00582493 /* GoogleService-Info.plist */; };
 		5B6EE4412612373B00582493 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EE4402612373B00582493 /* AuthViewController.swift */; };
 		5B88545C26172A3F0022A82C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88545B26172A3F0022A82C /* NewsViewController.swift */; };
 		5B88547026172A530022A82C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88546F26172A530022A82C /* PostViewController.swift */; };
 		5B88547326172A640022A82C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88547226172A640022A82C /* NotificationsViewController.swift */; };
 		5B88547626172A8C0022A82C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88547526172A8C0022A82C /* MessagesViewController.swift */; };
+		5BC9CBE9261893F900BCE864 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC9CBE8261893F900BCE864 /* GoogleService-Info.plist */; };
+		5BC9CBEC2619E92100BCE864 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC9CBEB2619E92100BCE864 /* OnboardingViewController.swift */; };
 		5BDD059A261737290030F315 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD0599261737290030F315 /* AppTabBarController.swift */; };
 		65C85E1318E24829940FEB62 /* Pods_JoodTAG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948F72E9E82258B746DD41A3 /* Pods_JoodTAG.framework */; };
 /* End PBXBuildFile section */
@@ -36,12 +37,13 @@
 		5B6EE3D7260F5B0100582493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6EE3E1260F5FA500582493 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		5B6EE3E5260F65D200582493 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5B6EE3ED260F679F00582493 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B6EE4402612373B00582493 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		5B88545B26172A3F0022A82C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		5B88546F26172A530022A82C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		5B88547226172A640022A82C /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		5B88547526172A8C0022A82C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		5BC9CBE8261893F900BCE864 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../.Trash/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BC9CBEB2619E92100BCE864 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		5BDD0599261737290030F315 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		948F72E9E82258B746DD41A3 /* Pods_JoodTAG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoodTAG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86BA227D9A02F84DEFDAC03 /* Pods-JoodTAG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoodTAG.debug.xcconfig"; path = "Target Support Files/Pods-JoodTAG/Pods-JoodTAG.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		5B6EE3C8260F5B0000582493 /* JoodTAG */ = {
 			isa = PBXGroup;
 			children = (
+				5BC9CBE8261893F900BCE864 /* GoogleService-Info.plist */,
 				5B88547526172A8C0022A82C /* MessagesViewController.swift */,
 				5B88547226172A640022A82C /* NotificationsViewController.swift */,
 				5B88546F26172A530022A82C /* PostViewController.swift */,
@@ -107,13 +110,13 @@
 				5B617E1E2613752D0064DA1D /* Extensions */,
 				5B6EE3E0260F5F8100582493 /* Buttons */,
 				5B885459261728040022A82C /* AppViewControllers */,
-				5B6EE3ED260F679F00582493 /* GoogleService-Info.plist */,
 				5B6EE3C9260F5B0000582493 /* AppDelegate.swift */,
 				5B6EE3CB260F5B0000582493 /* SceneDelegate.swift */,
 				5B6EE3D2260F5B0100582493 /* Assets.xcassets */,
 				5B6EE3D4260F5B0100582493 /* LaunchScreen.storyboard */,
 				5B6EE3D7260F5B0100582493 /* Info.plist */,
 				5BDD0599261737290030F315 /* AppTabBarController.swift */,
+				5BC9CBEB2619E92100BCE864 /* OnboardingViewController.swift */,
 			);
 			path = JoodTAG;
 			sourceTree = "<group>";
@@ -204,7 +207,7 @@
 			files = (
 				5B6EE3D6260F5B0100582493 /* LaunchScreen.storyboard in Resources */,
 				5B6EE3D3260F5B0100582493 /* Assets.xcassets in Resources */,
-				5B6EE3EE260F679F00582493 /* GoogleService-Info.plist in Resources */,
+				5BC9CBE9261893F900BCE864 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC9CBEC2619E92100BCE864 /* OnboardingViewController.swift in Sources */,
 				5B88547026172A530022A82C /* PostViewController.swift in Sources */,
 				5B6EE3E6260F65D200582493 /* HomeViewController.swift in Sources */,
 				5B6EE3CE260F5B0000582493 /* LoginViewController.swift in Sources */,
